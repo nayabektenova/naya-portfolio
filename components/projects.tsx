@@ -17,7 +17,7 @@ export default function Projects() {
         "Implements task scheduling and dynamic obstacle avoidance.",
         "Includes restart input popup and configurable layouts (randomized or rack-based).",
       ],
-      githubUrl: "https://github.com/yourusername/MultiBotSim",
+      githubUrl: "https://github.com/nayabektenova/MultiBotSim",
       gradient: "from-pink-400 to-rose-500",
     },
     {
