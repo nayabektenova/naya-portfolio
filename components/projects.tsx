@@ -75,17 +75,17 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative h-96 perspective-1000"
+              className="group relative h-96 [perspective:1000px] overflow-hidden"
               onMouseEnter={() => setFlippedCard(index)}
               onMouseLeave={() => setFlippedCard(null)}
             >
               <div
-                className={`relative w-full h-full transition-transform duration-700 transform-style-preserve-3d ${
-                  flippedCard === index ? "rotate-y-180" : ""
+                className={`relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] ${
+                  flippedCard === index ? "[transform:rotateY(180deg)]" : ""
                 }`}
               >
                 {/* FRONT */}
-                <div className="absolute inset-0 w-full h-full backface-hidden">
+                <div className="absolute inset-0 w-full h-full [backface-visibility:hidden]">
                   <div className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 rounded-3xl h-full p-6 backdrop-blur-sm border border-gray-700/50 hover:border-pink-300/30 transition-all hover:scale-105">
                     <div className="flex items-center justify-between mb-4">
                       <h3 className="text-xl font-bold text-white group-hover:text-pink-300 transition-colors">
@@ -109,7 +109,7 @@ export default function Projects() {
                 </div>
 
                 {/* BACK */}
-                <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180">
+                <div className="absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)]">
                   <div className="bg-gradient-to-br from-gray-800/90 to-gray-900/90 rounded-3xl h-full p-6 flex flex-col justify-between backdrop-blur-sm border border-pink-300/30">
                     <div>
                       <h3 className="text-xl font-bold text-pink-300 mb-4">{project.title}</h3>
@@ -122,6 +122,8 @@ export default function Projects() {
                     <Link
                       href={project.githubUrl}
                       className="flex items-center justify-center space-x-2 border border-gray-600 text-gray-300 py-2 px-4 rounded-full text-sm hover:border-pink-300 hover:text-pink-300 transition-colors duration-200"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <Github size={16} />
                       <span>View Code</span>
