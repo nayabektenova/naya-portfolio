@@ -8,19 +8,21 @@ export default function Projects() {
   const [flippedCard, setFlippedCard] = useState<number | null>(null)
 
   const projects = [
-    {
+   {
       title: "Sortora",
-      short: "AI-powered filter assistant for Facebook Marketplace & eBay.",
+      short: "AI-powered filter assistant extension for Facebook Marketplace.",
       tech: ["TypeScript", "Chrome Extension", "Firebase", "Groq API", "DOM Scripting"],
       bullets: [
-        "Parses natural language queries into structured filters using AI.",
-        "Applies filters via DOM scripting directly on Facebook Marketplace.",
-        "Supports eBay integration via Browse API for product listings.",
-        "Features a floating popup with query input and filter parsing feedback.",
+        "Lets users search Marketplace using plain language.",
+        "Uses AI (GPT-4 via Groq API) to convert messy input into structured filters.",
+        "Applies filters by constructing Marketplace URLs, no private API access required.",
+        "Works for vehicles and general items, intelligently adapting filters based on context.",
+        "Built with HTML/CSS/JS frontend and Firebase Cloud Functions for backend parsing.",
       ],
       githubUrl: "https://github.com/nayabektenova/sortora",
       gradient: "from-yellow-400 to-orange-500",
     },
+
     {
       title: "MultiBotSim",
       short: "Autonomous warehouse robot simulation with A* pathfinding.",
@@ -123,10 +125,10 @@ export default function Projects() {
 
                 {/* BACK */}
                 <div className="absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)]">
-                  <div className={`bg-gradient-to-br ${project.gradient} rounded-3xl h-full p-6 flex flex-col justify-between backdrop-blur-sm border border-pink-300/30`}>
+                  <div className="bg-gradient-to-br from-gray-800/90 to-gray-900/90 rounded-3xl h-full p-6 flex flex-col justify-between backdrop-blur-sm border border-pink-300/30">
                     <div>
-                      <h3 className="text-xl font-bold text-pink-100 mb-4">{project.title}</h3>
-                      <ul className="text-sm text-gray-100 list-disc pl-5 space-y-2 mb-6">
+                      <h3 className="text-xl font-bold text-pink-300 mb-4">{project.title}</h3>
+                      <ul className="text-sm text-gray-300 list-disc pl-5 space-y-2 mb-6">
                         {project.bullets.map((bullet, i) => (
                           <li key={i}>{bullet}</li>
                         ))}
@@ -134,7 +136,7 @@ export default function Projects() {
                     </div>
                     <Link
                       href={project.githubUrl}
-                      className="flex items-center justify-center space-x-2 border border-gray-200 text-white py-2 px-4 rounded-full text-sm hover:border-pink-100 hover:text-pink-100 transition-colors duration-200"
+                      className="flex items-center justify-center space-x-2 border border-gray-600 text-gray-300 py-2 px-4 rounded-full text-sm hover:border-pink-300 hover:text-pink-300 transition-colors duration-200"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
