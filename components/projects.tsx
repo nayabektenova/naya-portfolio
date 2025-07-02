@@ -81,9 +81,6 @@ export default function Projects() {
             Projects
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-pink-300 to-pink-200 mx-auto rounded-full shadow-lg shadow-pink-300/50"></div>
-          <p className="text-gray-400 mt-8 max-w-3xl mx-auto text-lg">
-            A selection of technical projects that showcase my skills in simulation, full-stack development, and real-time visualization.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
