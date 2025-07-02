@@ -71,6 +71,19 @@ export default function Projects() {
       githubUrl: "https://github.com/nayabektenova/village-rentals-app",
       gradient: "from-emerald-400 to-cyan-400",
     },
+        {
+      title: "MapleHR (In Progress)",
+      short: "Canadian HR Management System for small to mid-sized organizations.",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "Shadcn UI", "More to come..."],
+      bullets: [
+        "Designing a secure, scalable HR platform tailored to Canadian labor laws.",
+        "Implements user roles for admins, HR staff, and employees with custom permissions.",
+        "Supports payroll, leave management, performance reviews, and shift scheduling.",
+        "Built collaboratively with a 4-person team and a Client full use case diagrams, class models, and UI mockups.",
+      ],
+      githubUrl: "https://github.com/nayabektenova/maplehr.git",
+      gradient: "from-sky-400 to-blue-500"
+    }
   ]
 
   return (
