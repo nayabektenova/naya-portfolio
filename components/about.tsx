@@ -10,23 +10,23 @@ export default function About() {
     {
       icon: <Brain className="w-6 h-6" />,
       text: "Engineered full-stack applications with scalable architecture",
-      color: "from-blue-400 to-purple-500",
+      color: "from-pink-400 to-pink-300",
     },
     {
       icon: <TrendingUp className="w-6 h-6" />,
       text: "Adapted quickly to evolving technologies and tools",
-      color: "from-yellow-400 to-orange-400",
+      color: "from-pink-400 to-pink-300",
     },
 
     {
       icon: <Lightbulb className="w-6 h-6" />,
       text: "Motivated by curiosity and consistent problem-solving",
-      color: "from-amber-400 to-orange-400",
+      color: "from-pink-400 to-pink-300",
     },
     {
       icon: <Headphones className="w-6 h-6" />,
       text: "Focused and energized by deep work and lo-fi beats",
-      color: "from-green-400 to-teal-400",
+      color: "from-pink-400 to-pink-300",
     },
   ]
 
