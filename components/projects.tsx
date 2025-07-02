@@ -9,6 +9,19 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Sortora",
+      short: "AI-powered filter assistant for Facebook Marketplace & eBay.",
+      tech: ["TypeScript", "Chrome Extension", "Firebase", "Groq API", "DOM Scripting"],
+      bullets: [
+        "Parses natural language queries into structured filters using AI.",
+        "Applies filters via DOM scripting directly on Facebook Marketplace.",
+        "Supports eBay integration via Browse API for product listings.",
+        "Features a floating popup with query input and filter parsing feedback.",
+      ],
+      githubUrl: "https://github.com/nayabektenova/sortora",
+      gradient: "from-yellow-400 to-orange-500",
+    },
+    {
       title: "MultiBotSim",
       short: "Autonomous warehouse robot simulation with A* pathfinding.",
       tech: ["Python", "Pygame", "A* Pathfinding"],
@@ -86,14 +99,14 @@ export default function Projects() {
               >
                 {/* FRONT */}
                 <div className="absolute inset-0 w-full h-full [backface-visibility:hidden]">
-                  <div className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 rounded-3xl h-full p-6 backdrop-blur-sm border border-gray-700/50 hover:border-pink-300/30 transition-all hover:scale-105">
+                  <div className={`bg-gradient-to-br ${project.gradient} rounded-3xl h-full p-6 backdrop-blur-sm border border-gray-700/50 hover:border-pink-300/30 transition-all hover:scale-105`}>
                     <div className="flex items-center justify-between mb-4">
                       <h3 className="text-xl font-bold text-white group-hover:text-pink-300 transition-colors">
                         {project.title}
                       </h3>
                       <Sparkles className="text-pink-300 w-5 h-5 animate-pulse" />
                     </div>
-                    <p className="text-gray-300 text-sm leading-relaxed mb-6">{project.short}</p>
+                    <p className="text-gray-100 text-sm leading-relaxed mb-6">{project.short}</p>
 
                     <div className="flex flex-wrap gap-2 mt-auto">
                       {project.tech.map((tech, i) => (
