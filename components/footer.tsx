@@ -18,7 +18,7 @@ export default function Footer() {
 
           <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 text-center">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} Naya Bektenova. Crafted with passion and pixels.
+              © {new Date().getFullYear()} Naya Bektenova.
             </p>
             
           </div>
