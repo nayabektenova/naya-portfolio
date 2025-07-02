@@ -64,9 +64,7 @@ export default function Hero() {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="animate-in fade-in slide-in-from-bottom duration-1000">
           <div className="flex items-center justify-center mb-6">
-            <Sparkles className="text-pink-300 w-8 h-8 mr-4 animate-spin" />
             <span className="text-pink-300 text-lg font-medium">Hello, I'm</span>
-            <Sparkles className="text-pink-300 w-8 h-8 ml-4 animate-spin" style={{ animationDirection: "reverse" }} />
           </div>
 
           <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-pink-100 to-pink-200 bg-clip-text text-transparent animate-gradient">
