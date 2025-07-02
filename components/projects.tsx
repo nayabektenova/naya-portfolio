@@ -30,7 +30,7 @@ export default function Projects() {
         "Implements task scheduling and dynamic obstacle avoidance.",
         "Includes restart input popup and configurable layouts (randomized or rack-based).",
       ],
-      githubUrl: "https://github.com/nayabektenova/MultiBotSim",
+      githubUrl: "https://github.com/yourusername/MultiBotSim",
       gradient: "from-pink-400 to-rose-500",
     },
     {
@@ -99,14 +99,14 @@ export default function Projects() {
               >
                 {/* FRONT */}
                 <div className="absolute inset-0 w-full h-full [backface-visibility:hidden]">
-                  <div className={`bg-gradient-to-br ${project.gradient} rounded-3xl h-full p-6 backdrop-blur-sm border border-gray-700/50 hover:border-pink-300/30 transition-all hover:scale-105`}>
+                  <div className="bg-gradient-to-br from-gray-800/60 to-gray-900/60 rounded-3xl h-full p-6 backdrop-blur-sm border border-gray-700/50 hover:border-pink-300/30 transition-all hover:scale-105">
                     <div className="flex items-center justify-between mb-4">
                       <h3 className="text-xl font-bold text-white group-hover:text-pink-300 transition-colors">
                         {project.title}
                       </h3>
                       <Sparkles className="text-pink-300 w-5 h-5 animate-pulse" />
                     </div>
-                    <p className="text-gray-100 text-sm leading-relaxed mb-6">{project.short}</p>
+                    <p className="text-gray-300 text-sm leading-relaxed mb-6">{project.short}</p>
 
                     <div className="flex flex-wrap gap-2 mt-auto">
                       {project.tech.map((tech, i) => (
@@ -123,10 +123,10 @@ export default function Projects() {
 
                 {/* BACK */}
                 <div className="absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)]">
-                  <div className="bg-gradient-to-br from-gray-800/90 to-gray-900/90 rounded-3xl h-full p-6 flex flex-col justify-between backdrop-blur-sm border border-pink-300/30">
+                  <div className={`bg-gradient-to-br ${project.gradient} rounded-3xl h-full p-6 flex flex-col justify-between backdrop-blur-sm border border-pink-300/30`}>
                     <div>
-                      <h3 className="text-xl font-bold text-pink-300 mb-4">{project.title}</h3>
-                      <ul className="text-sm text-gray-300 list-disc pl-5 space-y-2 mb-6">
+                      <h3 className="text-xl font-bold text-pink-100 mb-4">{project.title}</h3>
+                      <ul className="text-sm text-gray-100 list-disc pl-5 space-y-2 mb-6">
                         {project.bullets.map((bullet, i) => (
                           <li key={i}>{bullet}</li>
                         ))}
@@ -134,7 +134,7 @@ export default function Projects() {
                     </div>
                     <Link
                       href={project.githubUrl}
-                      className="flex items-center justify-center space-x-2 border border-gray-600 text-gray-300 py-2 px-4 rounded-full text-sm hover:border-pink-300 hover:text-pink-300 transition-colors duration-200"
+                      className="flex items-center justify-center space-x-2 border border-gray-200 text-white py-2 px-4 rounded-full text-sm hover:border-pink-100 hover:text-pink-100 transition-colors duration-200"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
